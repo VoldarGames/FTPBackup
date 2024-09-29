@@ -1,0 +1,11 @@
+services:
+  ftpbackup:
+    image: voldar/ftpbackup
+    environment:
+      FTPBACKUP_CRONEXPRESSION : ${FTPBACKUP_CRONEXPRESSION}
+      FTPBACKUP_TOBACKUPFOLDER : "/tmp/MyData"
+      FTPBACKUP_HOST : ${FTPBACKUP_HOST}
+      FTPBACKUP_USER  : ${FTPBACKUP_USER}
+      FTPBACKUP_PASSWORD   : ${FTPBACKUP_PASSWORD}
+    volumes:
+      - /G/MyData:/tmp/MyData

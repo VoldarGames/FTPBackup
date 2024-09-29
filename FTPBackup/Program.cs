@@ -41,7 +41,8 @@ namespace FTPBackup
             await _scheduler.ScheduleJob(job, trigger);
 
             Console.WriteLine($"Scheduled backup job with cron expression: {cronExpression}");
-            Console.ReadLine();
+            while (true)
+                Thread.Sleep(1000);
         }
 
         private static void HandleProcessExit(object? sender, EventArgs e)
