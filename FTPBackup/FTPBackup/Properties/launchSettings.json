@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "FTPBackup": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}
